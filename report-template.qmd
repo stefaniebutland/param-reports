@@ -1,0 +1,13 @@
+---
+params:
+  name: "Stefanie Butland"
+  grade: "98%"
+---
+
+<!--- cannot figure out why rendering via Render button, or by quarto::quarto_render() does not add param values into report; it adds lthe literal text below like r params$name --->
+
+## Report
+
+**Student**: `r params$name`
+
+**Grade**: `r params$grade`
