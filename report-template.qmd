@@ -4,7 +4,13 @@ params:
   grade: "98%"
 ---
 
-<!--- cannot figure out why rendering via Render button, or by quarto::quarto_render() does not add param values into report; it adds lthe literal text below like r params$name --->
+<!--- rendering via Render button, or by quarto::quarto_render() did not add param values into report; it added the literal text below like r params$name. It worked fine in source tutorial and video but not for me. Now worked when I added the r setup bit below --->
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
 
 ## Report
 
